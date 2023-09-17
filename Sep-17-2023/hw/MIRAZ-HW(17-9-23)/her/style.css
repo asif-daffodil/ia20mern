@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(606e44193b313fa20443090400c2f39b.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.her {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; 
+}
+.her h3{
+    margin-bottom: 10px;
+}
+.icon-container {
+    display: flex;
+    gap: 20px; 
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 20%; 
+}
+.icon-container p {
+    font-size: 20px;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Hide overflowing content */
+}
+.icon-container .fa::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  #00a2ff ;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0); /* Initially, set scaleY to 0 to hide the wave */
+    transform-origin: bottom;
+    transition: transform 0.5s ease; /* Smooth transition for the wave */
+    z-index: -1; /* Place the wave below the icon */
+}
+.icon-container .in::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  #fa7e1e ;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0); /* Initially, set scaleY to 0 to hide the wave */
+    transform-origin: bottom;
+    transition: transform 0.5s ease; /* Smooth transition for the wave */
+    z-index: -1; /* Place the wave below the icon */
+   
+}
+
+.icon-container .tw::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  #0598c9 ;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0); /* Initially, set scaleY to 0 to hide the wave */
+    transform-origin: bottom;
+    transition: transform 0.5s ease; /* Smooth transition for the wave */
+    z-index: -1; /* Place the wave below the icon */
+}
+.icon-container .gi::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  #000000 ;
+    bottom: 0;
+    left: 0;
+    transform: scaleY(0); /* Initially, set scaleY to 0 to hide the wave */
+    transform-origin: bottom;
+    transition: transform 0.5s ease; /* Smooth transition for the wave */
+    z-index: -1; /* Place the wave below the icon */
+}
+.icon-container p:hover{
+    color: white;
+    border: 2px solid white;
+    border-radius:  50%;
+}
+.icon-container p:hover::before {
+    transform: scaleY(1); /* Expand the wave from bottom to top on hover */
+}
+
+
+
+
+

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  height: 250px;
+  width: 250px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  gap: 30px;
+}
+
+.flip-box {
+  background-color: transparent;
+  perspective: 1000px;
+  width: 250px;
+}
+.box {
+  position: relative;
+  height: auto;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .box {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-box-back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+/* box2 */
+
+.flip-box2 {
+  background-color: transparent;
+  perspective: 1000px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  background: url("images/images2.png") no-repeat center/cover;
+}
+.flip-box2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("images/images4.png") no-repeat center/cover;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: 0.8s;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+}
+.flip-box2:hover::after {
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+}
+.flip-box2::before {
+  content: "Sold";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: -14px;
+  right: -10px;
+  z-index: 10;
+}
+
+/* box 3 */
+.flip-box3 {
+  background-color: transparent;
+  perspective: 1000px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  background: url("images/images4.png") no-repeat center/cover;
+}
+.flip-box3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  background: url("images/images3.png") no-repeat center/cover;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.flip-box3:hover::after {
+  top: 0%;
+  left: 0%;
+}
