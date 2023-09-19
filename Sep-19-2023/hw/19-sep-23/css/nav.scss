@@ -1,0 +1,28 @@
+.menu{
+	display: flex;
+	justify-content: space-between
+}
+.menu .logo{
+	padding: 15px 10px;
+}
+.navigation{
+	display: flex;
+}
+.navigation li{
+	list-style: none;
+	padding: 15px 20px;
+	transition: all 0.2s ease-in;
+}
+.navigation li:hover{
+	background: #04c7f3;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.navigation li a{
+	text-decoration: none;
+	color: #000;
+	
+	
+	
+}
