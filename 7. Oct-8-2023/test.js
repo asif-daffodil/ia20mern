@@ -1,0 +1,1 @@
+const divison = ["Dhaka", "Rajshahi", "Chattogram", "Khulna", "Barishal", "Sylhet", "Rangpur", "Mymensingh"];

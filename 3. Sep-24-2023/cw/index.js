@@ -36,3 +36,6 @@ console.log(student_Name1);
     2. object
     3. function
 */
+
+const abc = "Hello World";
+console.log(typeof abc);

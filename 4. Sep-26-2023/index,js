@@ -1,0 +1,41 @@
+// Arithmetic operators
+const addition = 1 + 2; // Addition
+const subtraction = 3 - 1; // Subtraction
+const multiplication = 2 * 4; // Multiplication
+const division = 10 / 2; // Division
+const remainder = 10 % 3; // Modulus
+
+// Assignment operators
+let x = 5; // Simple assignment
+x += 2; // Addition assignment
+x -= 1; // Subtraction assignment
+x *= 3; // Multiplication assignment
+x /= 2; // Division assignment
+x %= 4; // Modulus assignment
+
+// Comparison operators
+const equal = 5 == 5; // Equal to
+const notEqual = 5 != 3; // Not equal to
+const strictEqual = 5 === '5'; // Strict equal to
+const strictNotEqual = 5 !== '5'; // Strict not equal to
+const greaterThan = 5 > 3; // Greater than
+const lessThan = 5 < 3; // Less than
+const greaterThanOrEqual = 5 >= 5; // Greater than or equal to
+const lessThanOrEqual = 5 <= 3; // Less than or equal to
+
+// Logical operators
+const and = true && false; // Logical AND
+const or = true || false; // Logical OR
+const not = !true; // Logical NOT
+
+// Bitwise operators
+const bitwiseAnd = 5 & 3; // Bitwise AND
+const bitwiseOr = 5 | 3; // Bitwise OR
+const bitwiseXor = 5 ^ 3; // Bitwise XOR
+const bitwiseNot = ~5; // Bitwise NOT
+const leftShift = 5 << 1; // Left shift
+const rightShift = 5 >> 1; // Right shift
+const zeroFillRightShift = 5 >>> 1; // Zero-fill right shift
+
+// Conditional (ternary) operator
+const result = 5 > 3 ? 'Yes' : 'No'; // Ternary operator
