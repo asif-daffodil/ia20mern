@@ -1,5 +1,6 @@
 import { Button } from "flowbite-react";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 
 const Pricing = () => {
     const [pricing, setPricing] = useState(0);
@@ -12,6 +13,9 @@ const Pricing = () => {
     return (
         <div className="min-h-screen grid place-items-center">
             <div className="text-center grid grid-flow-col place-items-center gap-3 text-2xl">
+                <Helmet>
+                    <title>Pricing</title>
+                </Helmet>
                 <Button pill gradientMonochrome="success" className="w-14" onClick={() => increment()}>+</Button>
                 {pricing}
                 <Button pill gradientMonochrome="teal" className="w-14" onClick={() => decrement()}>-</Button>

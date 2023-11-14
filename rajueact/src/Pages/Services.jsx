@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import User from "../Components/User";
+import { Helmet } from "react-helmet";
 
 const Services = () => {
 
@@ -14,6 +15,9 @@ const Services = () => {
     }, []);
     return (
         <div>
+            <Helmet>
+                <title>Services</title>
+            </Helmet>
             <h2 className="text-center text-3xl md:text-6xl py-3 md:py-6 dark:bg-slate-900 dark:text-white">All Users</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 p-3 md:p-6 dark:bg-slate-900 dark:text-white">
                 {users.map((user) => (

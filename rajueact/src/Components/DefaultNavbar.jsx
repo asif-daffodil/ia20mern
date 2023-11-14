@@ -63,6 +63,14 @@ export default function DefaultNavbar() {
                 >
                     Contact
                 </NavLink>
+                <NavLink
+                    to="/access"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "text-blue-600" : ""
+                    }
+                >
+                    Sign-in/Sign-up
+                </NavLink>
                 <button onClick={() => changeMode()}>
                     {btnIcont}
                 </button>
